@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(items/homepage.jpg);
+  height: 80vh;
+  background-size: max(1350px, 100vw);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.nav {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+  /* z-index: 10; */
+}
+
+.nav img {
+  width: 150px;
+  height: 35px;
+  color: red;
+  z-index: 1;
+}
+
+.nav .btn {
+  z-index: 10;
+}
+
+.content {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: -10px;
+  line-height: 1.8;
+}
+
+.content :first-child {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.content :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.content :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.content .inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.content .inp .email {
+  font-size: 13px;
+  font-weight: 300;
+  border: 2px solid green;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  padding: 0px 13px;
+  text-decoration: none;
+  width: 22vw;
+  height: 52px;
+}
+
+.content .inp button {
+  font-family: "Archivo Black", sans-serif;
+  background-color: red;
+  height: 52px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+  width: 10vw;
+  font-size: 20px;
+}
+
+.content .inp button:hover {
+  background-color: rgb(250, 56, 56);
+}
+
+
+.line {
+  height: 9px;
+  width: 100%;
+  background-color: gray;
+}
+
+.btn .signin {
+  /* font-family: "Archivo Black", sans-serif; */
+  background-color: red;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.btn .lang {
+  /* font-family: "Archivo Black", sans-serif; */
+  font-size: 14px;
+  background-color: rgba(23, 23, 23, 0.7);
+  color: white;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid white;
+  width: 110px;
+  margin-right: 15px;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: auto;
+}
+
+.firstsection .fstext {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.firstsection .fstext :first-child {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.firstsection .fstext :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.firstsection .fsimg {
+  position: relative;
+}
+
+.firstsection .fsimg img {
+  width: 620px;
+  position: relative;
+  z-index: 2;
+}
+
+.firstsection .fsimg video {
+  width: 444px;
+  position: absolute;
+  right: 90px;
+  top: 99px;
+}
+
+.firstsection .secimg {
+  position: relative;
+}
+.childimg{
+  width: 600px;
+}
+
+.firstsection .secimg img {
+  width: 620px;
+  position: relative;
+  z-index: 2;
+}
+
+.firstsection .secimg video {
+  width: 395px;
+  position: absolute;
+  right: 112px;
+  top: 45px;
+}
+
+
+/* ----FAQ CSS------ */
+
+.faq {
+  width: 100vw;
+  /* background-color: black; */
+}
+
+.faq h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 52px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faqbox {
+  /* font-family: "Archivo Black", sans-serif; */
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  width: 60vw;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.faqbox:hover {
+  background-color: grey;
+}
+
+.faqbox svg {
+  width: 30px;
+  color: white;
+}
+
+.faq h4 {
+  font-size: 30px;
+  font-weight: 400px;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.input .email {
+  font-size: 13px;
+  font-weight: 300;
+  border: 2px solid green;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  padding: 0px 13px;
+  text-decoration: none;
+  width: 22vw;
+  height: 52px;
+}
+
+.input button {
+  font-family: "Archivo Black", sans-serif;
+  background-color: red;
+  height: 52px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-left: 8px;
+  width: 10vw;
+  font-size: 20px;
+}
+
+.input button:hover {
+  background-color: rgb(247, 69, 69);
+}
+
+.footer {
+  width: 69vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer h4 {
+  color: white;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 18px;
+  /* margin-bottom: 30px; */
+}
+
+.footer .foot-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  text-decoration: underline;
+  flex-wrap: wrap;
+  /* margin: 25px; */
+}
+
+.footer .foot-container .column {
+  /* width: 10vw; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 1.9;
+}
+
+/* -----------Responsiveness -------------- */
+@media screen and (max-width: 660px) and (min-width: 360px) {
+  .nav {
+    height: 30px;
+    padding: 20px;
+  }
+
+  .nav .img {
+    width: 100px;
+  }
+
+  .btn .lang {
+    font-size: 12px;
+    padding: 5px 14px;
+    height: 24px;
+    width: 80px;
+    margin-right: 3px;
+  }
+
+  .btn .signin {
+    font-size: 12px;
+    padding: 0px 8px;
+    height: 27px;
+  }
+
+
+  .nav img {
+    width: 50px;
+    height: 15px;
+  }
+
+  .content :first-child {
+    font-size: 28px;
+  }
+
+  .content :nth-child(2) {
+    font-size: 17px;
+  }
+
+  .content :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .content .inp .email {
+    font-size: 9px;
+    width: 48vw;
+    height: 38px;
+  }
+
+  .content .inp button {
+    height: 43px;
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .firstsection .fstext :first-child {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .firstsection .fstext :nth-child(2) {
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+
+  .firstsection .fsimg img {
+    width: 320px;
+  }
+
+  .firstsection .fsimg video {
+    width: 225px;
+    position: absolute;
+    right: 49px;
+    top: 53px;
+  }
+
+  .firstsection .onlyimg img {
+    width: 320px;
+  }
+
+  .firstsection .secimg img {
+    width: 361px;
+  }
+
+  .firstsection .secimg video {
+    width: 229px;
+    position: absolute;
+    right: 70px;
+    top: 25px;
+  }
+
+  .faq h1 {
+    font-size: 18px;
+  }
+
+  .faqbox {
+    font-size: 14px;
+    height: 56px;
+  }
+
+  .faq h4 {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .input .email {
+    font-size: 11px;
+    width: 40vw;
+    height: 40px;
+  }
+
+  .input button {
+    height: 44px;
+    margin-left: 6px;
+    width: 110px;
+    font-size: 10px;
+  }
+
+  .footer .foot-container {
+    font-size: 14px;
+    padding: 34px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 660px) {
+
+  .nav {
+    height: 30px;
+    padding: 30px;
+  }
+
+  .content :first-child {
+    font-size: 38px;
+  }
+
+  .content :nth-child(2) {
+    font-size: 21px;
+  }
+
+  .content :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .content .inp .email {
+    font-size: 13px;
+    width: 35vw;
+    height: 51px;
+  }
+
+  .content .inp button {
+    width: 18vw;
+    font-size: 13px;
+  }
+
+  .firstsection .fstext :first-child {
+    font-size: 34px;
+    padding-top: 30px;
+  }
+
+  .firstsection .fstext :nth-child(2) {
+    font-size: 18px;
+    padding-bottom: 33px;
+  }
+
+  .faq h1 {
+    font-size: 28px;
+  }
+
+  .faqbox {
+    font-size: 20px;
+    height: 56px;
+  }
+
+  .faq h4 {
+    font-size: 25px;
+    padding: 33px;
+  }
+
+  .input .email {
+    width: 34vw;
+  }
+
+  .input button {
+    width: 18vw;
+    font-size: 13px;
+  }
+
+  .footer h4 {
+    margin:18px 0px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1000px){
+  .content .inp button {
+    width: 150px;
+    font-size: 16px;
+}
+.content .inp .email {
+  font-size: 13px;
+  width: 30vw;
+  height: 51px;
+}
+
+.input .email {
+  width: 28vw;
+}
+.input button {
+  width: 175px;
+}
+.firstsection .fstext :first-child {
+  font-size: 34px;
+  padding-top: 30px;
+}
+
+.firstsection .fstext :nth-child(2) {
+  font-size: 18px;
+  padding-bottom: 33px;
+}
+}
